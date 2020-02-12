@@ -126,7 +126,7 @@ sys.path.insert(0,"/var/www/catalog")
 
 from app import app as application
 ```
-Optional but recommended: Setup virtual environment and Install app dependencies 
+#### 11.  Setup virtual environment and Install app dependencies 
 ```
 sudo apt-get install python3-pip
 sudo -H pip3 install virtualenv
