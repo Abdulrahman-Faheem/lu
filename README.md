@@ -50,7 +50,7 @@ nano .ssh/authorized_keys
 ```
 Then paste the contents of the public key created on the local machine
 
-#### 5. Change the SSH port from 22 to 2200 | Enforce key-based authentication | Disable login for root user
+#### 5. Change the SSH port from 22 to 2200 | Disable login for root user
 ```
 sudo nano /etc/ssh/sshd_config
 ```
@@ -69,14 +69,10 @@ sudo ufw allow ntp
 sudo ufw enable
 ```
 
-
-
 #### 7. Install Apache2 and mod-wsgi for python3 and Git
 ```
 sudo apt-get install apache2 libapache2-mod-wsgi-py3 git
 ```
-Note: For Python2 replace `libapache2-mod-wsgi-py3` with `libapache2-mod-wsgi`
-
 #### 8. Install and configure PostgreSQL
 ```
 sudo apt-get install libpq-dev python3-dev
@@ -94,7 +90,7 @@ GRANT ALL ON SCHEMA public TO catalog;
 \q
 exit
 ```
-**Note:** In your catalog project you should change database engine to
+**Note:** change database engine to
 ```
 engine = create_engine('postgresql://catalog:password@localhost/catalog')
 ```
