@@ -130,6 +130,7 @@ source env/bin/activate
 
 ```
 pip3 install flask packaging oauth2client redis passlib flask-httpauth
+
 pip3 install sqlalchemy flask-sqlalchemy psycopg2 bleach requests
 ```
 
